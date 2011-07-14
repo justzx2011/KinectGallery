@@ -1,0 +1,51 @@
+﻿<Window x:Class="Ryerson.KinectGallery.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Kinect Gallery" 
+        Background="#FF333333"
+        Height="300" 
+        Width="300">
+    <Window.Resources>
+        <ResourceDictionary>
+            <Style x:Key="MenuTile" TargetType="Border">
+                <EventSetter Event="MouseEnter" Handler="Border_MouseEnter"></EventSetter>
+                <EventSetter Event="MouseLeave" Handler="Border_MouseLeave"></EventSetter>
+            </Style>
+            <Style x:Key="TitleText" TargetType="TextBlock">
+                <Setter Property="BitmapEffect">
+                    <Setter.Value>
+                        <DropShadowBitmapEffect></DropShadowBitmapEffect>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="FontFamily" Value="Helvetica Neue LT Pro" />
+                <Setter Property="FontSize" Value="48" />
+                <Setter Property="Foreground" Value="WhiteSmoke" />
+                <Setter Property="HorizontalAlignment" Value="Left" />
+                <Setter Property="Margin" Value="20" />
+                <Setter Property="VerticalAlignment" Value="Bottom" />
+            </Style>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Border x:Name="quad1" Grid.Row="0" Grid.Column="0" Background="#FF8DDF00" MouseLeftButtonUp="Quad1_MouseLeftButtonUp" Style="{StaticResource MenuTile}">
+            <TextBlock Style="{StaticResource TitleText}">Current Exhibition</TextBlock>
+        </Border>
+        <Border x:Name="quad2" Grid.Row="0" Grid.Column="1" Background="#FFB93FFF" MouseLeftButtonUp="Quad2_MouseLeftButtonUp" Style="{StaticResource MenuTile}">
+            <TextBlock Style="{StaticResource TitleText}">Images</TextBlock>
+        </Border>
+        <Border x:Name="quad3" Grid.Row="1" Grid.Column="0" Background="#FF27BAE2" MouseLeftButtonUp="Quad3_MouseLeftButtonUp" Style="{StaticResource MenuTile}">
+            <TextBlock Style="{StaticResource TitleText}">Videos</TextBlock>
+        </Border>
+        <Border x:Name="quad4" Grid.Row="1" Grid.Column="1" Background="#FFB91AA6" MouseLeftButtonUp="Quad4_MouseLeftButtonUp" Style="{StaticResource MenuTile}">
+            <TextBlock Style="{StaticResource TitleText}">About the Department</TextBlock>
+        </Border>
+    </Grid>
+</Window>
