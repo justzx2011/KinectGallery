@@ -15,17 +15,8 @@ namespace Ryerson.KinectGallery
         /// <param name="e"></param>
         private void Application_Startup(object sender, StartupEventArgs e)
         {
-            // KinectWindow kw = new KinectWindow();
-            // kw.Visibility = Visibility.Visible;
-
-            //MouseWindow mw = new MouseWindow();
+            //MainWindow mw = new MainWindow();
             //mw.Visibility = Visibility.Visible;
-
-            //MainWindow mw2 = new MainWindow();
-            //mw2.Visibility = Visibility.Visible;
-
-            MenuWindow mw3 = new MenuWindow();
-            mw3.Visibility = Visibility.Visible;
         }
 
     }

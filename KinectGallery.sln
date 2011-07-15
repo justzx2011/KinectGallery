@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinectGallery", "KinectGallery\KinectGallery.csproj", "{676A2437-B0BA-4DB3-BBDF-FE1C8BB1F37B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageGallery", "ImageGallery\ImageGallery.csproj", "{E3E4F681-8B95-474D-91CD-D021B9213730}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -15,10 +13,6 @@ Global
 		{676A2437-B0BA-4DB3-BBDF-FE1C8BB1F37B}.Debug|x86.Build.0 = Debug|x86
 		{676A2437-B0BA-4DB3-BBDF-FE1C8BB1F37B}.Release|x86.ActiveCfg = Release|x86
 		{676A2437-B0BA-4DB3-BBDF-FE1C8BB1F37B}.Release|x86.Build.0 = Release|x86
-		{E3E4F681-8B95-474D-91CD-D021B9213730}.Debug|x86.ActiveCfg = Debug|x86
-		{E3E4F681-8B95-474D-91CD-D021B9213730}.Debug|x86.Build.0 = Debug|x86
-		{E3E4F681-8B95-474D-91CD-D021B9213730}.Release|x86.ActiveCfg = Release|x86
-		{E3E4F681-8B95-474D-91CD-D021B9213730}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

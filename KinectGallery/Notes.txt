@@ -1,6 +1,12 @@
 Kinect Gallery
 -------------------------------------------------------------------------------
 
+- Make each view layout its own User Control.
+- Do interactions only through mouse events right now.
+- Aim to do selection by mouse over timer. Show updating countdown mouse cursor.
+- 
+
+
 - Implement a keyboard and mouse driven gallery. Navigate only through keyboard or mouse-over events.
 - Create the following displays: web page, image gallery, video gallery, flickr photo stream 
 

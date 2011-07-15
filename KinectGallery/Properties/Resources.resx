@@ -46,7 +46,7 @@
     
     mimetype: application/x-microsoft.net.object.binary.base64
     value   : The object must be serialized with 
-            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
@@ -60,6 +60,7 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
@@ -68,9 +69,10 @@
               <xsd:sequence>
                 <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="name" use="required" type="xsd:string" />
               <xsd:attribute name="type" type="xsd:string" />
               <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
@@ -85,9 +87,10 @@
                 <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
                 <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
               <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
@@ -109,9 +112,36 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="kinect" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAADj0lEQVRoQ+2Y3UtTYRzHz7ag
+        qK2LWmM657IXpMDQXM612EvJmIyaURIUQoLMN8j/oC4KutqVV0EXXoR4KV52W3RVJKRdVhColQa9GuT2
+        9P0ez4klZ2e203LC88CH33nev7/f89s5jypCCGU7s63FM/DSga1OP3kC8gQsvgVlCskUkilkMQIyhSwG
+        UL6FZArJFLIYAZlCFgMo30IyhWQKWYyATCGLAVRkqYEI2KHhBngEXoAnNc6sppWaqV3ZCR5PTk7+nJmZ
+        KUxNTa3VMtPT0wVqpWZNu+LCw2w6nS50dXUJ2JommUxSX4GaAbUr+8DTRCKxFo/HRSwWy5uROBfNJ89H
+        8t2Xwqplvdycf9kPjQVqpWZNu+LGw0t6Rgd4CmakL8ZE59lmETjYqFrWi8e3tLQIv98vaPV2o7Zy+5Tq
+        p0ZqpWZA7coBViKRiCDhcFh4PJ6SHDnhFoGAXzz4YVMt68XjKf4mroi0ertRm9kepfpCoZCqkWgOUPu6
+        AxRO2DkwMFCSobE+ceHKGdHUFFAt68XjU6mUKp5WbzdqM9ujVF80GlU1ko0OzHd0dIjN0Hn6lLh8NSWy
+        Y72qZb14XiaTEf39/YJWbzdq28xeZmPgwLwW/PUTCAaDor29fcvo6cmIXO6uuv/o6KAYH8+JkZGsmJi4
+        J4aHs3/ootbiE9iPylxra2uhra1NbAeolZoBtSt7QU5r4C/bEvX19XkzrK6vzad4aqZ29UvMNDoOOkHc
+        Cj6fT5hRau1AILDqdDqvoT9RZn9qpFZqpnb1PsEHesMjYUdF2Gw2D8Svgq/gC/gOPml8Zt3hcHiN1ocD
+        eTjQ5HK5DqPfY6KBGqmVmtW7kKWCjRUIc4IgGNPErsCSRfARLIP34A0YBSfBbs7VC56fgblGFLTZNi2q
+        0r+otE0YgR3I+V4t4ow8RS9odglW5y2eieoc5vRxLnBoa9ngwCvA2/BvB8rpq/jfKtrmeyDmPj5ca16v
+        d6Wurm4JLIJl8AEsgHdFbawvYOxyQ0PDKuY9R8owXemIguAfggOvwW39BKrpwC5s4sNmuFJUBgQLt9ud
+        hjODWOMOeAi+gVv/wwFeZZspnkIqdYJrAPVaXPR7YFqppZon4MT6R0G33W7Pwo6AYTBUBOtGcOx1ztXW
+        4FqGpZoO6N+PY9g5BKIGxNC2EX0c53Aur8Tq+9yoVNMB/fvB4+cfRX/77eD7nHNN3+flHPgFCmilrQBK
+        QnEAAAAASUVORK5CYII=
+</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="kinect_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kinect_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
