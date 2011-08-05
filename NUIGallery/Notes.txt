@@ -1,0 +1,48 @@
+Kinect Gallery
+-------------------------------------------------------------------------------
+
+* Current goal is to make a mouse driven gallery
+
+-- Make an image gallery that cycles through a collection of images in a folder.
+
+
+
+
+
+- the application has a PATH value that denotes the current view
+- if PATH == COLLECTION_ROOT, then show the main menu
+- else, show that subfolder
+- may not navigate above or outside of the collection root
+
+
+- Aim to do selection by mouse over timer. Show updating countdown mouse cursor.
+
+
+- Create the following displays: web page, image gallery, video gallery
+
+Transition later to Kinect driven gallery.
+- When a skeleton is detected, start drawing depth/skeleton display.
+- When skeleton is no-longer detected, revent to standard view.
+
+
+The finishing touches ...
+
+- motion
+- voice control
+- easter egg
+
+-------------------------------------------------------------------------------
+Image Gallery
+
+- open a folder containing images, PDF files
+- present a paged, grid view of images in the folder
+- read a text file with descriptions of items; can be a CSV file with tab separated values
+- display captions with images
+- use keyboard control to navigate through a collection/collections
+- do lazy loading of collection data
+- add transitions between displays
+
+-------------------------------------------------------------------------------
+Video Gallery
+
+- same as above

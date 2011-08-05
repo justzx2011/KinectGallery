@@ -1,0 +1,40 @@
+﻿<Window x:Class="Ryerson.NUIGallery.GalleryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Ryerson.NUIGallery"
+        Title="Kinect Gallery" 
+        Background="#FF333333"
+        MinHeight="480" 
+        MinWidth="640"
+        MouseDoubleClick="Window_MouseDoubleClick"
+        WindowStartupLocation="CenterOwner"
+        WindowState="Maximized"
+        >
+    <Canvas x:Name="canvas">
+        <local:MenuControl x:Name="xMenu"
+                           Canvas.ZIndex="20"
+                           Height="{Binding ElementName=canvas,Path=ActualHeight,Mode=OneWay}" 
+                           MenuClicked="MainMenuControl_MenuClicked"
+                           Visibility="Hidden"
+                           Width="{Binding ElementName=canvas,Path=ActualWidth,Mode=OneWay}"
+                           ></local:MenuControl>
+        <Rectangle x:Name="fader" 
+                   Canvas.ZIndex="10"
+                   Fill="Black" 
+                   Height="{Binding ElementName=canvas,Path=ActualHeight,Mode=OneWay}" 
+                   Opacity="0"
+                   Visibility="Hidden"
+                   Width="{Binding ElementName=canvas,Path=ActualWidth,Mode=OneWay}"
+                   />
+        <local:ImageGalleryControl x:Name="xImageGallery"
+                                   Height="{Binding ElementName=canvas,Path=ActualHeight,Mode=OneWay}" 
+                                   Width="{Binding ElementName=canvas,Path=ActualWidth,Mode=OneWay}"
+                                   Visibility="Hidden"
+                                   ></local:ImageGalleryControl>
+        <local:VideoGalleryControl x:Name="xVideoGallery"
+                                   Height="{Binding ElementName=canvas,Path=ActualHeight,Mode=OneWay}" 
+                                   Visibility="Hidden"
+                                   Width="{Binding ElementName=canvas,Path=ActualWidth,Mode=OneWay}"
+                                   ></local:VideoGalleryControl>
+    </Canvas>
+</Window>
